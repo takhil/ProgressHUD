@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crg-gL-HVi">
+                    <rect key="frame" x="127.5" y="283" width="120" height="100"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="JXy-Iw-Vpf">
+                            <rect key="frame" x="41" y="18" width="37" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="70i-UR-H8I"/>
+                                <constraint firstAttribute="width" constant="37" id="LMV-FQ-Bf3"/>
+                            </constraints>
+                            <color key="color" red="0.22213992160000001" green="0.80797906090000005" blue="0.35100426969999998" alpha="0.89421018839999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Wait..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bt4-C8-Tit">
+                            <rect key="frame" x="16.5" y="63" width="87" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="1xI-sA-BhP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Bt4-C8-Tit" firstAttribute="top" secondItem="JXy-Iw-Vpf" secondAttribute="bottom" constant="8" id="LvR-4X-5sA"/>
+                        <constraint firstItem="Bt4-C8-Tit" firstAttribute="centerX" secondItem="crg-gL-HVi" secondAttribute="centerX" id="RCN-Si-hyR"/>
+                        <constraint firstItem="JXy-Iw-Vpf" firstAttribute="top" secondItem="crg-gL-HVi" secondAttribute="top" constant="18" id="THw-vc-a0a"/>
+                        <constraint firstAttribute="height" constant="100" id="fyq-pl-fe3"/>
+                        <constraint firstAttribute="width" constant="120" id="soc-OT-G58"/>
+                        <constraint firstItem="JXy-Iw-Vpf" firstAttribute="centerX" secondItem="crg-gL-HVi" secondAttribute="centerX" id="wSP-Tk-0Mq"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="crg-gL-HVi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jUh-tZ-VOo"/>
+                <constraint firstItem="crg-gL-HVi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="o4d-En-Czq"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
